@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { type User } from "@/types/types";
 import UserCard from "@/components/client/UserCard";
+
 const UserClient = () => {
   const [users, setUsers] = useState<Array<User>>([]);
   const [isLoading, setLoading] = useState<boolean>(false);
