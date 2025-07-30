@@ -23,6 +23,7 @@ const ParallelFetching = async ({
 }: {
   params: Promise<{ userId: string }>;
 }) => {
+  //
   const { userId } = await params;
   const postsData = getPosts(userId);
   const albumsData = getAlbums(userId);
